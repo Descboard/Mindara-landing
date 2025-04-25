@@ -9,13 +9,13 @@
 body {
   font-family: 'Roboto', sans-serif; /* Fuente principal */
   color: #333; /* Color de texto */
-  background-color: #f4f4f4; /* Fondo de la página */
+  background-color: #F4F4F4; /* Fondo suave */
 }
 
-/* Header - Barra de navegación */
+/* Header */
 header {
-  background-color: #007BFF; /* Color de fondo */
-  padding: 20px 0; /* Espaciado alrededor */
+  background-color: #003366; /* Azul oscuro */
+  padding: 20px 0;
 }
 
 header .container {
@@ -26,42 +26,41 @@ header .container {
 }
 
 header .logo a {
-  color: #fff; /* Color del texto del logo */
+  color: #fff;
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
 }
 
-/* Navegación: enlaces de la barra */
 header nav ul {
-  list-style: none; /* Elimina puntos de lista */
+  list-style: none;
 }
 
 header nav ul li {
-  display: inline-block; /* Elementos en línea */
+  display: inline-block;
   margin-left: 20px;
 }
 
 header nav ul li a {
-  color: #fff; /* Color de los enlaces */
-  text-decoration: none; /* Elimina subrayado */
+  color: #fff;
+  text-decoration: none;
   font-weight: 600;
 }
 
 /* Sección Hero */
 .hero {
-  background-color: #28a745; /* Color de fondo */
+  background-color: #28A745; /* Verde suave */
   color: white;
   text-align: center;
   padding: 80px 20px;
 }
 
 .hero h1 {
-  font-size: 2.5rem; /* Tamaño de título principal */
+  font-size: 2.5rem;
 }
 
 .hero p {
-  font-size: 1.2rem; /* Tamaño de párrafo */
+  font-size: 1.2rem;
   margin-top: 10px;
 }
 
@@ -69,18 +68,22 @@ header nav ul li a {
   margin-top: 20px;
   padding: 10px 20px;
   background-color: #fff;
-  color: #007BFF; /* Color del botón */
+  color: #003366;
   font-weight: bold;
   border: none;
-  border-radius: 5px; /* Bordes redondeados */
+  border-radius: 5px;
   text-decoration: none;
 }
 
-/* Sección de Servicios */
+/* Sección Servicios */
 #servicios {
   padding: 60px 20px;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: #fff;
+}
+
+#servicios h2 {
+  color: #003366;
 }
 
 #servicios .servicios-lista {
@@ -91,6 +94,10 @@ header nav ul li a {
 
 #servicios .servicio {
   width: 30%;
+  background-color: #F4F4F4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #servicios .servicio h3 {
@@ -105,7 +112,7 @@ header nav ul li a {
 
 /* Sección Testimonios */
 #testimonios {
-  background-color: #007BFF; /* Fondo de testimonios */
+  background-color: #003366;
   color: white;
   padding: 60px 20px;
   text-align: center;
@@ -130,10 +137,11 @@ header nav ul li a {
 #contacto {
   padding: 60px 20px;
   text-align: center;
+  background-color: #fff;
 }
 
 #contacto .cta-btn {
-  background-color: #28a745;
+  background-color: #28A745;
   color: white;
   padding: 15px 30px;
   font-size: 1.1rem;
@@ -147,4 +155,31 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .hero h1 {
+      font-size: 2rem;
+  }
+
+  .servicios-lista {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .servicio {
+      width: 80%;
+      margin-bottom: 20px;
+  }
+
+  .testimonios-lista {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .testimonio {
+      width: 80%;
+      margin-bottom: 20px;
+  }
 }
