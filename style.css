@@ -1,68 +1,150 @@
-/* Estilos básicos para el cuerpo de la página */
+/* Reset de estilos básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos globales */
 body {
-    font-family: 'Segoe UI', sans-serif; /* Fuente limpia y moderna */
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5; /* Fondo gris claro */
-    color: #333; /* Texto de color gris oscuro para contraste */
-  }
-  
-  /* Estilo para el encabezado */
-  header {
-    background-color: #0f172a; /* Fondo oscuro para el encabezado */
-    color: #fff; /* Texto blanco para destacar */
-    text-align: center;
-    padding: 2rem 1rem; /* Espaciado alrededor del texto */
-  }
-  
-  /* Estilo para las secciones */
-  .intro, .servicios, .contacto {
-    max-width: 800px; /* Limita el ancho de las secciones */
-    margin: 2rem auto; /* Centra las secciones y agrega espacio arriba y abajo */
-    padding: 1rem;
-    background: white; /* Fondo blanco para cada sección */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); /* Sombra suave alrededor de las secciones */
-  }
-  
-  /* Estilo para los títulos principales */
-  h1 {
-    margin: 0;
-    font-size: 2.5rem; /* Título grande */
-  }
-  
-  /* Estilo para los subtítulos */
-  h2, h3 {
-    color: #1e293b; /* Color de texto más oscuro para los subtítulos */
-  }
-  
-  /* Eliminar los puntos de la lista */
-  ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  
-  /* Espaciado entre los ítems de la lista */
-  li {
-    padding: 0.5rem 0;
-  }
-  
-  /* Estilos para los enlaces (enlaces de correo) */
-  a {
-    color: #0ea5e9; /* Azul claro para los enlaces */
-    text-decoration: none; /* Sin subrayado */
-  }
-  
-  a:hover {
-    text-decoration: underline; /* Subrayado al pasar el ratón por encima */
-  }
-  
-  /* Estilo para el pie de página */
-  footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #e2e8f0; /* Fondo gris claro para el pie */
-    font-size: 0.9rem; /* Fuente más pequeña para el pie */
-    margin-top: 2rem; /* Espaciado superior */
-  }
-   
+  font-family: 'Roboto', sans-serif; /* Fuente principal */
+  color: #333; /* Color de texto */
+  background-color: #f4f4f4; /* Fondo de la página */
+}
+
+/* Header - Barra de navegación */
+header {
+  background-color: #007BFF; /* Color de fondo */
+  padding: 20px 0; /* Espaciado alrededor */
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+header .logo a {
+  color: #fff; /* Color del texto del logo */
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Navegación: enlaces de la barra */
+header nav ul {
+  list-style: none; /* Elimina puntos de lista */
+}
+
+header nav ul li {
+  display: inline-block; /* Elementos en línea */
+  margin-left: 20px;
+}
+
+header nav ul li a {
+  color: #fff; /* Color de los enlaces */
+  text-decoration: none; /* Elimina subrayado */
+  font-weight: 600;
+}
+
+/* Sección Hero */
+.hero {
+  background-color: #28a745; /* Color de fondo */
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem; /* Tamaño de título principal */
+}
+
+.hero p {
+  font-size: 1.2rem; /* Tamaño de párrafo */
+  margin-top: 10px;
+}
+
+.hero .cta-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #007BFF; /* Color del botón */
+  font-weight: bold;
+  border: none;
+  border-radius: 5px; /* Bordes redondeados */
+  text-decoration: none;
+}
+
+/* Sección de Servicios */
+#servicios {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+#servicios .servicios-lista {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+#servicios .servicio {
+  width: 30%;
+}
+
+#servicios .servicio h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#servicios .servicio p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Sección Testimonios */
+#testimonios {
+  background-color: #007BFF; /* Fondo de testimonios */
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#testimonios .testimonios-lista {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+#testimonios .testimonio {
+  width: 40%;
+}
+
+#testimonios .testimonio p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* Sección Contacto */
+#contacto {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#contacto .cta-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
